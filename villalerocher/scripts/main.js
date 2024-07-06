@@ -27,6 +27,37 @@ document.getElementById("email").addEventListener("click", function (event) {
   }, 100);
 });
 
+document
+  .getElementsByClassName("WhatsappBtn")[0]
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    const dateRange = document.getElementsByClassName("dateRange")[0].value;
+    const whatsappNumber = "32495362065"; // Use the number without plus sign and formatted correctly
+    const message = `Bonjour, je voudrais réserver la villa pour les dates suivantes: ${dateRange}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+    setTimeout(() => {
+      window.open(whatsappUrl, "_blank");
+    }, 100);
+  });
+
+document
+  .getElementsByClassName("email")[0]
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    const dateRange = document.getElementsByClassName("dateRange")[0].value;
+    const email = "locationsraretanger@gmail.com";
+    const subject = "Réservation de Villa";
+    const body = `Bonjour,\n\nJe voudrais réserver la villa pour les dates suivantes: ${dateRange}\n\nCordialement,\n[Votre Nom]`;
+    const mailtoUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+      email
+    )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    setTimeout(() => {
+      window.open(mailtoUrl, "_blank");
+    }, 100);
+  });
+
 var modal = document.getElementById("myModal");
 
 var btn = document.getElementById("openModalBtn");
