@@ -82,6 +82,9 @@ a {
   grid-column: 4/7;
   grid-row: 18/20;
 }
+.column8{
+    grid-column: 4/7;
+}
 
 .modal,
 .overlay {
