@@ -1,34 +1,3 @@
-const images = [
-  "images/show-room/location-vacances.webp",
-  "images/show-room/location-vacances.webp",
-  "images/show-room/gallery-3.webp",
-  "images/show-room/villa-louer-piscine-vue-panoramique.webp",
-  "images/show-room/gallery-5.webp",
-  "images/show-room/gallery-6.webp",
-  "images/show-room/villa-louer-villa-louer-villa-louer-piscine-eclairage-nuit.webp",
-  "images/show-room/gallery-8.webp",
-  "images/show-room/gallery-9.webp",
-  "images/show-room/gallery-10.webp",
-  "images/show-room/gallery-11.webp",
-  "images/show-room/gallery-12.webp",
-  "images/show-room/gallery-13.webp",
-  "images/show-room/gallery-14.webp",
-  "images/show-room/location-vacances.webp",
-  "images/show-room/gallery-16.webp",
-  "images/show-room/gallery-17.webp",
-  "images/show-room/gallery-18.webp",
-  "images/show-room/gallery-19.webp",
-  "images/show-room/gallery-20.webp",
-  "images/show-room/gallery-21.webp",
-  "images/show-room/gallery-22.webp",
-  "images/show-room/gallery-23.webp",
-  "images/show-room/gallery-24.webp",
-  "images/show-room/gallery-25.webp",
-  "images/show-room/gallery-26.webp",
-  "images/show-room/gallery-27.webp",
-  "images/show-room/gallery-28.webp",
-];
-
 document.addEventListener("DOMContentLoaded", () => {
   const galleryImages = document.querySelectorAll(".gallery-img");
   galleryImages.forEach((img, index) => {
